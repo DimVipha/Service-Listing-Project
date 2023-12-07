@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Oswald:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <head>
+        <header>
+        </header>
+        <div class=" mx-auto ">
+    
+            <nav class="border-gray-200">
+                <div class="container flex flex-wrap items-center justify-between">
+                    <a href="#" class="flex">
+                        <img class="w-[70px] h-[70px] mx-20 mt-3 mb-3"
+                            src="/img/photo_2023-12-01_11-42-46-removebg-preview.png" alt="logo">
+                    </a>
+               
+                        <input type="text" id="email-adress-icon"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2"
+                            placeholder="Search...">
+                    </div>
+                    <button data-collapse-toggle="mobile-menu" type="button"
+                        class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+                        <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium ">
+                            <li>
+                                <a href="#"
+                                    class="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded focus:outline-none"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                    class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto">Services
+                                    <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></button>
+                                <!-- Dropdown menu -->
+                                <div id="dropdownNavbar"
+                                    class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="#"
+                                                class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Restaurant</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Auto
+                                                Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Beauty&
+                                                Spa</a>
+                                        </li>
+                                    </ul>
+    
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">About</a>
+                            </li>
+                        </ul>
+                    </div>
+     
+                </div>
+            </nav>
+        
+                   
+        </div>
+    </head>
+    <main>
+        <section class="bg-slate-50 ">
+            <h2 class="text-5xl font-extrabold dark:text-white text-center py-10">About us</h2>
+        <div class="text-center py-5">  
+            <p class="text-gray-500 dark:text-gray-400">Welcome to Help,<br> where innovation meets passion! We are a dynamic team of 6 individuals, <br>united by a common goal: to revolutionize the way services are discovered and shared.</p>
+        </div>
+        <div class="text-center">
+            <h3 class="text-2xl font-bold dark:text-white">Our mission</h3>      
+            <p class="text-gray-500 dark:text-gray-400">At Help, our mission is clear - to simplify and enhance the way people connect with services. <br> We believe in the power of technology to transform experiences and make everyday tasks a breeze.</p>
+        </div>
+        </section>
+        <!-- profile -->
+        <section class="bg-slate-100">
+            <h2 class="text-2xl font-bold dark:text-white text-center mt-10">Our Team</h2>
+           <!-- component -->
+<div class="flex items-center h-screen w-full justify-center">
+    <div class="max-w-xs p-10">
+        <div class="bg-white shadow-xl rounded-lg py-3">
+            <div class="photo-wrapper p-2">
+                <img class="w-32 h-32 rounded-full mx-auto" src="/img/photo_2023-12-01_11-42-46.jpg" alt="profile">
+            </div>
+            <div class="p-2">
+                <h3 class="text-center text-xl text-gray-900 font-medium leading-8">Joh Doe</h3>
+                <div class="text-center text-gray-400 text-xs font-semibold">
+                    <p>Web Developer</p>
+                </div>
+                <table class="text-xs my-3">
+                    <tbody><tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Address</td>
+                        <td class="px-2 py-2">Chatakpur-3, Dhangadhi Kailali</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Phone</td>
+                        <td class="px-2 py-2">+977 9955221114</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Email</td>
+                        <td class="px-2 py-2">john@exmaple.com</td>
+                    </tr>
+                </tbody>
+                </table>
+    
+            </div>
+        </div>
+    </div>
+    <div class="max-w-xs p-10">
+        <div class="bg-white shadow-xl rounded-lg py-3">
+            <div class="photo-wrapper p-2">
+                <img class="w-32 h-32 rounded-full mx-auto" src="/img/photo_2023-12-01_11-42-46.jpg" alt="profile">
+            </div>
+            <div class="p-2">
+                <h3 class="text-center text-xl text-gray-900 font-medium leading-8">Joh Doe</h3>
+                <div class="text-center text-gray-400 text-xs font-semibold">
+                    <p>Web Developer</p>
+                </div>
+                <table class="text-xs my-3">
+                    <tbody><tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Address</td>
+                        <td class="px-2 py-2">Chatakpur-3, Dhangadhi Kailali</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Phone</td>
+                        <td class="px-2 py-2">+977 9955221114</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Email</td>
+                        <td class="px-2 py-2">john@exmaple.com</td>
+                    </tr>
+                </tbody>
+                </table>
+    
+            </div>
+        </div>
+    </div>
+    <div class="max-w-xs p-10">
+        <div class="bg-white shadow-xl rounded-lg py-3">
+            <div class="photo-wrapper p-2">
+                <img class="w-32 h-32 rounded-full mx-auto" src="/img/photo_2023-12-01_11-42-46.jpg" alt="profile">
+            </div>
+            <div class="p-2">
+                <h3 class="text-center text-xl text-gray-900 font-medium leading-8">Joh Doe</h3>
+                <div class="text-center text-gray-400 text-xs font-semibold">
+                    <p>Web Developer</p>
+                </div>
+                <table class="text-xs my-3">
+                    <tbody><tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Address</td>
+                        <td class="px-2 py-2">Chatakpur-3, Dhangadhi Kailali</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Phone</td>
+                        <td class="px-2 py-2">+977 9955221114</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Email</td>
+                        <td class="px-2 py-2">john@exmaple.com</td>
+                    </tr>
+                </tbody>
+                </table>
+    
+            </div>
+        </div>
+    </div>
+    <div class="max-w-xs p-10">
+        <div class="bg-white shadow-xl rounded-lg py-3">
+            <div class="photo-wrapper p-2">
+                <img class="w-32 h-32 rounded-full mx-auto" src="/img/photo_2023-12-01_11-42-46.jpg" alt="profile">
+            </div>
+            <div class="p-2">
+                <h3 class="text-center text-xl text-gray-900 font-medium leading-8">Joh Doe</h3>
+                <div class="text-center text-gray-400 text-xs font-semibold">
+                    <p>Web Developer</p>
+                </div>
+                <table class="text-xs my-3">
+                    <tbody><tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Address</td>
+                        <td class="px-2 py-2">Chatakpur-3, Dhangadhi Kailali</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Phone</td>
+                        <td class="px-2 py-2">+977 9955221114</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Email</td>
+                        <td class="px-2 py-2">john@exmaple.com</td>
+                    </tr>
+                </tbody>
+                </table>
+    
+            </div>
+        </div>
+    </div>
+    
+    </div>
+        </section>
+    </main>
+
+    <!-- component -->
+    <div class="flex items-end w-full min-h-screen bg-white">
+
+        <footer class="w-full text-gray-700 bg-slate-50 body-font">
+            <div
+                class="container flex flex-col flex-wrap px-10 py-5 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+                <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+                    <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+            
+                        <img class="w-[70px] h-[70px] mx-20" src="/img/photo_2023-12-01_11-42-46-removebg-preview.png" alt="logo">
+                    </a> 
+
+                    <!-- socail media icon -->
+                    <div class="mt-4 mx-[50px]">
+                        <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path stroke="none"
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                    </path>
+                                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                  <!-- end social media icon -->
+                </div>
+                  
+                <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">service
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Restaurant</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Beauty</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Auto Service</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About Us
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Who are we?</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Our mission</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">our Team member</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact
+                            Us
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Sent message</a>
+                            </li>
+                            <li class="mt-3">
+                                <a href="tel:+1234567890" class="text-gray-500 cursor-pointer hover:text-gray-900">hot line(+885 1012323)</a>
+                            </li>
+                           
+                        </nav>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div>
+                <div class="container px-5 py-4 mx-auto">
+                    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 ">
+                    <p class="text-sm text-gray-700 capitalize xl:text-center py-3   ">© 2023 Help service listing and
+                        release marks are registered trademarks of help. </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
